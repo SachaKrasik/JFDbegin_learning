@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Вакансия: <span lang="eng"> Frontend Developer</span></h1>
+
+    <form action="#" method="post">
+        <!-- Вместо 2 отдельных div с display: inline-block докапалась до решения внизу. Насколько оно адекватно? -->   
+    <fieldset style="border: none; width: 500px;">
+
+        <legend style="display: none;"> Общая инфа о приходе мордашки! </legend>
+
+        <div style="display: inline-block; margin-right: 30px;" >    
+        <img src="face.png" alt="Схема мордашки" title="Улыбка чеширского кота :) ">
+        </div>
+
+        <div style="position: relative; float: right; right: 70px;">
+      <div>Имя: ...(ваше имя)</div>  
+      <div> <a href="https://github.com/SachaKrasik/JFDbegin_learning">Ссылка на репозиторий в GitHub</a> </div>
+      <div>Опыт работы: нет </div>
+        </div>
+
+    </fieldset> 
+
+    <fieldset style="border: none;">
+        <!-- ID и name могут совпадать?-->
+     <label for="interview-date">Дата собеседования:</label> <input type="date" name="interview-day" id="interview-date" min="2020-07-01">  
+   
+    </fieldset>
+
+    <fieldset style="border: none;">
+        <!-- Сокрытие элемента свойством display мешает поисковому роботу? Как работают эти роботы? Как оптимизировать страницу, чтобы она быстро грузилась (размер картинок, видео, количество или тяжесть кода и т.д.)? -->
+    <legend> Уровень английского: </legend>
+        <!-- Совпадение в input name и id — хорошо, плохо или зависит от ситуации употребления? -->
+     <input type="radio" id="bad-level" name="english-level"> <label for="bad-level"> Плохо </label>
+     <input type="radio" id="average-level" name="english-level"> <label for="average-level"> Средне </label>
+     <input type="radio" id="good-level" name="english-level"> <label for="good-level"> Хорошо </label>
+     <input type="radio" id="great-level" name="english-level"> <label for="great-level"> Превосходно </label>
+    </fieldset>
+
+    <fieldset style="border: none;">
+        <legend> Ключевые навыки: </legend>
+        <!--Как из такого списка внизу делать действительный интерактив с добавлением элемента списка в меню?-->
+        <ul style="list-style-type: '- ';">
+        <li>HTML</li>
+        <li>CSS/LESS</li>
+        <li>Java Script</li>
+        <li></li>
+       </ul>    
+       <!-- <textarea  id="skill-item" style="resize: none;" rows="1">Введите навык...</textarea> --> 
+       <input type="text" id="ad-skill-item" name="skill" placeholder="Введите навык"> <button type="button">Добавить в список</button>
+    </fieldset>   
+
+    <fieldset style="border: none;">
+    <label for="communication-select"> Коммуникабельность: </label> 
+    <select name="communication" id="communication-select">
+        <option value="null">Выберите значение</option>
+        <option value="too-extrtovert"> Всех обниму, со всеми поговорю </option>
+        <option value="too-introvert"> От всех убегу, дай покодить </option>
+        <option value="last-in-the-middle" disabled>Третьего не дано </option>
+    </select>
+    </fieldset>
+   
+    <fieldset style="border: none;">
+        <label for="wishing-salary"> Желаемая з/п: </label> <input type="text" placeholder="пиши точную цифру" name="salary" id="wishing-salary"placeholder="Введите значение..." required>
+    </fieldset>
+
+    <fieldset style="border: none;">
+        <legend>Подходит по критериям: </legend>
+        <input type="checkbox" id="language-match" name="knows-english"> <label for="language-match"> Знание английского </label>
+        <input type="checkbox" id="salary-match" name="money-need"> <label for="salary-match"> Оклад </label>
+        <input type="checkbox" id="skill-match" name="can-do"> <label for="skill-match"> Навыки </label>
+        <input type="checkbox" id="human-match" name="our-person"> <label for="human-match"> Сразу видно, что свой человек </label>
+    </fieldset>
+
+    <fieldset style="border: none;">
+        <!-- Зачем нужны tbody, thead? -->
+        <table style="border: 1px solid black; border-collapse: collapse;">
+            <caption style="text-align: left; caption-side: top; padding-bottom: 5px;">Образование, курсы и т.п.</caption>
+            <thead>
+                <tr>
+                    <th style="border: 1px solid black;">№</th>
+                    <th style="border: 1px solid black;">Сроки обучения</th>
+                    <th style="border: 1px solid black;">Наименование учебного заведения, курсов</th>
+                </tr>    
+            </thead>
+            <tbody>
+              <tr>  
+                <td style="border: 1px solid black;">1</td>
+                <td style="border: 1px solid black;">2004 — 2014 гг. </td>
+                <td style="border: 1px solid black;">Огонь </td>
+             </tr>
+             <tr>  
+                <td style="border: 1px solid black;">2</td>
+                <td style="border: 1px solid black;">2014 — 2019 гг. </td>
+                <td style="border: 1px solid black;">Вода </td>
+             </tr>
+             <tr>  
+                <td style="border: 1px solid black;">3</td>
+                <td style="border: 1px solid black;">2019 — настоящее время </td>
+                <td style="border: 1px solid black;">Медные трубы </td>
+             </tr>
+           </tbody>     
+       </table>     
+    </fieldset>
+
+    <!-- Что лучше использовать: <input type="submit"> или <button> для отправки формы? -->    
+        <div>
+            <button type="submit" style="margin: 10px 0; margin-left: 200px;"> Получить работу </button>
+        </div>    
+
+</form>
+</body>
+</html>
