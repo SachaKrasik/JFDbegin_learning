@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="form.css" rel="stylesheet">
+    <title>Initial Job Interview</title>
+</head>
+<body class="main-container">
+    <div class="form-container">
+    <form class="centered-form" action="#" method="post">
+        <h1 class="main-header"> Вакансия: <span lang="en"> Frontend Developer</span></h1>
+
+    <section class="personal-name-wrapper">
+
+        <h2 class="hidden"> Общая инфа о приходе мордашки! </h2>
+
+        <!-- <div class="block-inlined margin-right"> -->   
+        <img src="face.png" class="animated-face block-inlined" alt="Схема мордашки" title="Улыбка чеширского кота :) ">
+        <!-- </div> -->
+
+        <div class="block-inlined vertical-top">
+      <div>Имя: Саша Красик </div>  
+      <div> <a href="https://github.com/SachaKrasik/JFDbegin_learning" target="_blank">Ссылка на репозиторий в GitHub</a> </div>
+      <div>Опыт работы: нет </div>
+        </div>
+
+    </section>
+
+    <section class="container interview-container">
+      
+      <h2 class="block-inlined subheader">   
+     <label for="interview-date">Дата собеседования:</label> <input type="date" name="interview-day" id="interview-date" min="2020-07-01"> </h2> 
+   
+    </section>
+
+    <section class="container">
+        
+    <h2 class="subheader"> Уровень английского: </h2>
+        <div class="date-wrapper">
+     <input type="radio" id="bad-level" name="english-level"> <label for="bad-level"> Плохо </label>
+     <input type="radio" id="average-level" name="english-level"> <label for="average-level"> Средне </label>
+     <input type="radio" id="good-level" name="english-level"> <label for="good-level"> Хорошо </label>
+     <input type="radio" id="great-level" name="english-level"> <label for="great-level"> Превосходно </label>
+        </div>
+    </section>
+
+    <section class="container list-container">
+        <h2 class="subheader"> Ключевые навыки: </h2>
+    
+        <ul style="list-style-type: '- ';">
+        <li>HTML</li>
+        <li>CSS/LESS</li>
+        <li>Java Script</li>
+        <li></li>
+       </ul>     
+       <input type="text" id="ad-skill-item" name="skill" placeholder="Введите навык"> <button class="list-button" type="button"> <span> Добавить в список</span> </button>
+    </section>   
+
+    <section class="container">
+    <h2 class="block-inlined subheader">
+    <label for="communication-select"> Коммуникабельность: </label> </h2>
+    <select name="communication" id="communication-select">
+        <option value="null" disabled selected> Выберите значение </option>
+        <option value="too-extrtovert"> Всех обниму, со всеми поговорю </option>
+        <option value="too-introvert"> От всех убегу, дай покодить </option>
+        <option value="last-in-the-middle" disabled>Третьего не дано </option>
+    </select>
+    </section>
+   
+    <section class="container money-container">
+        <h2 class="block-inlined subheader"> <label for="wishing-salary"> Желаемая з/п: </label> </h2> <input type="text" placeholder="пиши точную цифру" name="salary" id="wishing-salary" required>
+    </section>
+
+    <section class="container">
+        <h2 class="subheader">Подходит по критериям: </h2>
+            <div class="checkbox-wrapper">
+        <input type="checkbox" id="language-match" name="knows-english"> <label for="language-match"> Знание английского </label>
+        <input type="checkbox" id="salary-match" name="money-need"> <label for="salary-match"> Оклад </label>
+        <input type="checkbox" id="skill-match" name="can-do"> <label for="skill-match"> Навыки </label>
+        <input type="checkbox" id="human-match" name="our-person"> <label for="human-match"> Сразу видно, что&nbsp;свой&nbsp;человек </label>
+            </div>
+    </section>
+
+    <section class="table-container">
+        <h2 class="caption-table subheader">Образование, курсы и т.п.</h2>
+        <table class="border-collapse">
+            <caption class="hidden"> Образование, курсы и т.п.</caption>
+            <thead>
+                <tr>
+                    <th>№</th>
+                    <th>Сроки обучения</th>
+                    <th>Наименование учебного заведения, курсов</th>
+                </tr>    
+            </thead>
+            <tbody>
+              <tr>  
+                <td>1</td>
+                <td>2004 — 2014 гг. </td>
+                <td>Огонь </td>
+             </tr>
+             <tr>  
+                <td>2</td>
+                <td>2014 — 2019 гг. </td>
+                <td>Вода </td>
+             </tr>
+             <tr>  
+                <td>3</td>
+                <td>2019 — настоящее время </td>
+                <td> Медные трубы </td>
+             </tr>
+           </tbody>     
+       </table>     
+    </section>
+
+    <!-- Что лучше использовать: <input type="submit"> или <button> для отправки формы? -->    
+        <div class="submit-button-wrapper">
+            <button type="submit" class="form-submit-button"> <span> Получить работу </span> </button>
+        </div>    
+
+</form>
+</div>
+
+</body>
+</html>

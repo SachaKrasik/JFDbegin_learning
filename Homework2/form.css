@@ -1,0 +1,264 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,300;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: 'IBM Plex Serif', serif;
+    color: black;
+    font-size: 14px;
+    
+}
+
+/* Работают, вроде бы, мои фокусы на ограничениях в main-container.
+Баловалась с device-toggle в иснтрументах разраба гугла. */
+
+.main-container {
+    max-width: 1500px;
+    
+   
+    
+}
+
+.main-header,
+.main-header span {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 17px;
+
+}
+
+/*position:fixed сделала, чтобы форма не улетала с места.
+После моих шаманств :) */
+
+.form-container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+     /*Стащила из https://cssgenerator.org/gradient-css-generator.html */
+     background: rgba(123,20,20,0.32);
+     background: repeating-radial-gradient(ellipse farthest-side at top center, rgba(123,20,20,0.32) 0%, rgba(173,48,48,0.23) 10%, rgba(86,227,145,0.59) 10%, rgba(255,255,5,0.75) 10%, rgba(184,32,0,0.79) 20%);
+     background: -webkit-repeating-radial-gradient(ellipse farthest-side at top center, rgba(123,20,20,0.32) 0%, rgba(173,48,48,0.23) 10%, rgba(86,227,145,0.59) 10%, rgba(255,255,5,0.75) 10%, rgba(184,32,0,0.79) 20%);
+     background: -moz-repeating-radial-gradient(ellipse farthest-side at top center, rgba(123,20,20,0.32) 0%, rgba(173,48,48,0.23) 10%, rgba(86,227,145,0.59) 10%, rgba(255,255,5,0.75) 10%, rgba(184,32,0,0.79) 20%);
+     
+    
+}
+
+/* Здесь я добивалась того, чтобы при сужении окна браузера
+форма не сжималась, как резина, под размер.
+*/
+/* Для экранов мобильных — решение очень-очень фиговое */
+
+.centered-form {
+    margin: 0 auto;
+    width: 500px;
+    margin-top: 15px;
+    background-color: #eeddddfb;
+    box-shadow:  -7px 0px 180px 75px rgba(255, 187, 59, 0.45);
+    border: medium outset rgba(212, 95, 12, 0.438);
+    box-sizing: content-box;
+}
+
+
+.container {
+    padding: 3px 0;
+}
+
+.subheader {
+    font-size: 1rem;
+    text-transform: lowercase;
+    text-indent: 5px;
+    text-decoration-line: overline underline;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(10, 3, 29);
+
+}
+
+
+
+img.animated-face.block-inlined {
+  padding-left: 5px;
+  margin-right: 30px;
+}
+
+img.animated-face:hover {
+    -moz-transform: scale(1.4) rotate(720grad);
+    -webkit-transform: scale(1.4) rotate(720grad);
+    -o-transform: scale(1.4) rotate(720grad);
+    -ms-transform: scale(1.4) rotate(720grad);
+    transform: scale(1.4) rotate(720grad);
+}
+
+.block-inlined.vertical-top  div:nth-child(2) > a[href] {
+    text-decoration-line: none;
+    
+}
+
+
+.block-inlined.vertical-top  div:nth-child(2) > a[href]:visited {
+    color: #e52e71;
+    
+}
+
+.block-inlined.vertical-top  div:nth-child(2) > a[href]:hover {
+    background: #e5ab2eda;
+    color: black;
+
+}
+
+
+.hidden { 
+    display: none;
+}
+
+.block-inlined {
+    display: inline-block;
+}
+
+/*
+.block-inlined.margin-right {
+    margin-right: 30px;
+}
+*/
+
+.block-inlined.vertical-top {
+    vertical-align: top;
+}
+
+.main-header {
+    padding: 15px 0;
+    text-align: center;
+    text-decoration-line: underline overline;
+}
+
+.interview-container input[type="date"] {
+    margin-left: 20px;
+    width: 304px;
+    height: 18px;
+}
+
+.date-wrapper {
+    padding-left: 80px;
+
+}
+
+.list-container ul {
+    padding-left: 200px;
+}
+
+section.list-container input[type="text"] {
+    margin-left: 5px;
+}
+
+.list-button {
+    margin-left: 30px;
+    width: 270px;
+    height: 18px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+}
+
+select {
+    margin-left: 25px;
+    width: 300px;
+    height: 18px;
+}
+
+.money-container input[type="text"] {
+    margin-left: 75px;
+    width: 300px;
+    height: 18px;
+}
+
+.checkbox-wrapper {
+    padding-left: 80px;
+}
+
+
+.table-container .caption-table {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.table-container table.border-collapse {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.table-container table.border-collapse th,
+.table-container table.border-collapse td {
+    border: 1px solid black;
+}
+
+tbody tr :first-child,
+tbody tr :last-child {
+    text-align: center;
+}
+
+/* для одной ячейки таблицы hover 
+
+tbody tr :first-child:hover,
+tbody tr :nth-child(2):hover,
+tbody tr :last-child:hover {
+    background: #e5ab2eda;
+}
+*/
+
+th:hover,
+tr:hover {
+    background: #e5ab2eda;
+}
+
+.submit-button-wrapper {
+    height: 60px;
+    
+}
+
+.form-submit-button {
+    min-width: 200px;
+    width: 200px;
+    height: 30px;
+    margin: 15px 30%;
+    border-radius: 30px;
+    background-color: whitesmoke;
+
+}
+
+.form-submit-button > span {
+    font-style: italic;
+}
+
+span {
+    font-family: 'Roboto Mono', monospace;
+    font-style: normal;
+    font-weight: bold;
+}
+
+button span:hover,
+button:hover {
+    color:  #e52e71;
+    background-color: rgb(223, 186, 25);
+} 
+
+[placeholder] {
+    font-family: 'Roboto Mono', monospace;
+}
+
+input[type="text"]:active {
+    color:  #e52e71;
+    background-color: rgb(223, 186, 25);
+}
+
+input[type="text"]:hover {
+    border: dashed #e52e71;
+
+}
+
