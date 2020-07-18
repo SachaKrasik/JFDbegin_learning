@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Neue', cursive;
+    font-weight: 400;
+    
+}
+
+body {
+  display: grid;
+  justify-content: center;
+}
+
+::selection {
+  background-color:  rgba(218, 165, 32, 0.699);
+  color: crimson;
+}
+
+.flex-item-rectangle div + p:hover,
+.name-circle:hover {
+  background-color:  rgba(255, 255, 255, 0.87);
+  cursor: default;
+}
+
+/* GRID DIVISIONS */
+
+.main-grid-container {
+    display: grid;
+    border: 2px solid black;
+    background-color: rgba(218, 165, 32, 0.699);
+    width: 800px;
+    height: 600px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    margin-block-start: 30px;
+    writing-mode: horizontal-tb;
+    
+  
+}
+
+.discussion-header {
+    
+    background-color: #9067D6;
+    height: 70px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-bottom: 2px solid black;
+}
+
+.sidebar-nicks {
+    width: 150px;
+    height: 600px;
+    background-color: #6727D6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border-right: 2px solid black;
+    
+}
+
+.messages {
+    width: 650px;
+    height: 600px;
+    background-color: rgba(255, 255, 255, 0.87);
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    
+}
+
+
+/* FLEX DIVISIONS */
+
+.flex-rectangle.discussion-header{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+
+.flex-rectangle .close-button {
+  align-self: flex-end;
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  width: 30px;
+  height: 25px;
+  background-color: transparent;
+  cursor: pointer;
+  border-color: transparent;
+  
+}
+
+svg {
+  display: flex;
+  justify-content: center;
+}
+
+.messages-flex-container {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    width: 800px;
+    height: 500px;
+    flex-wrap: wrap;
+    padding-top: 30px;
+  
+}
+
+.message.flex-element {
+   display: flex;
+   padding-bottom: 10px;
+    
+    
+}
+
+.flex-item-side {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-basis: 150px;
+   /* height: 70px; */
+  
+}
+
+
+.flex-item-rectangle {
+    display: flex;
+    flex-direction: column;
+    flex-basis:  550px;
+    height: auto;
+    justify-content: space-between;
+    padding-left: 30px;
+
+    
+}
+
+
+/* BLOCK'S DIVISION — для блочных элементов */
+
+p strong,
+p small,
+.name-circle,
+.message span {
+  font-family: 'Comic Neue', cursive;
+  font-weight: bold;
+}
+
+p strong {
+  font-size: 30px;
+}
+
+
+.flex-rectangle.discussion-header > p {
+ padding-top: 5px;
+ padding-left: 8px;
+}
+
+.flex-rectangle.discussion-header .close-button + p {
+  padding-top: 0;
+}
+
+.name-circle {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border: 2px solid black;
+  border-radius: 30px;
+  padding: 1px;
+  margin-left: 5px;
+  text-align: center;
+  box-sizing: content-box;
+  background-color: #9067D6;
+  
+}
+
+
+.message span {
+  display: inline-block;
+  padding-left: 10px;
+  
+  
+}
+
+div.flex-item-rectangle div {
+  padding-bottom: 10px;
+}
+
+div.flex-item-rectangle div + p {
+background-color: #9081D6;
+}
