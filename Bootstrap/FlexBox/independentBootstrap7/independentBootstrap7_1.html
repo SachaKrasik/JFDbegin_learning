@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Самостоятельная работа 7.1</title>
+    <style>
+        * {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        .container {
+            display: flex;
+            flex-flow: column nowrap;
+            background-color: transparent;
+        }
+
+        .container header {
+            display: flex;
+            justify-content: center;
+            padding-top: 1em;
+            height: 30%;
+            background-color: #648FDE;
+
+        }
+
+        main {
+            height: 70%;
+            background-color: #fff;
+        }
+
+        section {
+            display: flex;
+            flex-flow: row nowrap;
+            background-color: transparent;
+            justify-content: space-between;
+        }
+
+        article {
+            display: flex;
+            justify-content: center;
+            padding-top: 1em;
+            width: 70%;
+            background-color: transparent;
+        }
+
+        nav,
+        aside {
+            display: flex;
+            justify-content: center;
+            padding-top: 1em;
+            width: 15%;
+            background-color: #A5C1F1;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <p>Шапка</p>
+        </header>
+        <main>
+            <section>
+                <nav>
+                    <p>Меню</p>
+                </nav>
+                <article>
+                    <p>Основной контейнер</p>
+                </article>
+                <aside>
+                    <p>Сайдбар</p>
+                </aside>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
