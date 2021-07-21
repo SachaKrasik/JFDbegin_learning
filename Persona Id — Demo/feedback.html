@@ -61,42 +61,41 @@
                         <form action="#" method="post" enctype="multipart/form-data">
                             <div class="row">
                                 <div class="col-lg-6 col-md-6">
-                                    
+                                    <fieldset>
+                                        <legend> Контактная информация </legend>
+                                        <label for="namefield"> <span>* Имя</span> </label>
+                                        <br>
+                                        <input type="text" name="name" id="namefield" placeholder="Василилий Иванов" required>
+                                        <br>
+                                        <label for="telfield"> <span>* Телефон</span> </label>
+                                        <br>
+                                        <input type="tel" name="telnumber" id="telfield" placeholder="+7 921 320-88-88"
+                                            pattern="\+d\s?\[0-9]{3}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" required>
+                                        <br>
+                                        <label for="emailfield"> <span>* E-mail</span></label>
+                                        <br>
+                                        <input type="email" name="email" id="emailfield" placeholder="ivanov@mail.ru" required>
+                                        <br>
+                                        <label for="cityfield"> <span>Город</span> </label>
+                                        <br>
+                                        <input type="search" name="city" id="cityfield" placeholder="Москва">
+                                    </fieldset>
                                 </div>
-                                <div class="col-lg-6 col-md-6"></div>
+                                <div class="col-lg-6 col-md-6">
+                                    <fieldset>
+                                        <legend>Пожелания</legend>
+                                        <label for="commentfield">
+                                            <span>Комментарий</span> </label>
+                                        <br>
+                                        <textarea class="liquid-rect" rows="5" cols="45" name="comment"
+                                            id="commentfield">Нужно что-то там (подставите сами). Прошу связаться для обсуждения.</textarea>
+                                        <br>
+                                        <label for="brief-field">Исходники </label> <input type="file" name="brief"
+                                            id="brief-field">
+                                        <br>
+                                    </fieldset>
+                                </div>
                             </div>
-                            <fieldset>
-                                <legend> Контактная информация </legend>
-                                <label for="namefield"> <span>* Имя</span> </label>
-                                <br>
-                                <input type="text" name="name" id="namefield" placeholder="Василилий Иванов" required>
-                                <br>
-                                <label for="telfield"> <span>* Телефон</span> </label>
-                                <br>
-                                <input type="tel" name="telnumber" id="telfield" placeholder="+7 921 320-88-88"
-                                    pattern="\+d\s?\[0-9]{3}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" required>
-                                <br>
-                                <label for="emailfield"> <span>* E-mail</span></label>
-                                <br>
-                                <input type="email" name="email" id="emailfield" placeholder="ivanov@mail.ru" required>
-                                <br>
-                                <label for="cityfield"> <span>Город</span> </label>
-                                <br>
-                                <input type="search" name="city" id="cityfield" placeholder="Москва">
-                            </fieldset>
-
-                            <fieldset>
-                                <legend>Пожелания</legend>
-                                <label for="commentfield">
-                                    <span>Комментарий</span> </label>
-                                <br>
-                                <textarea rows="5" cols="100" name="comment"
-                                    id="commentfield">Нужно что-то там (подставите сами). Прошу связаться для обсуждения.</textarea>
-                                <br>
-                                <label for="brief-field">Исходники </label> <input type="file" name="brief"
-                                    id="brief-field">
-                                <br>
-                            </fieldset>
                             <fieldset>
                                 <legend>
                                     Последний этап — отправка формы
