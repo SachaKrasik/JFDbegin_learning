@@ -4,8 +4,8 @@ body {
     box-sizing: border-box;
     color: rgb(232, 199, 52);
     text-shadow: 1px 1px 2px black;
-    background-image: url(/img/background.jpg);
     background-color: #0C0C0C;
+    background-image: url(../img/background.jpg);
     background-size: cover;
 }
 
