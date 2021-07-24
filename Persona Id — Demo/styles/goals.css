@@ -1,0 +1,67 @@
+.goals-container__head-title {
+    margin-top: 0;
+    margin-bottom: 6px;
+    text-align: left;
+}
+
+.goals-container {
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 2em;
+}
+
+.goals-container__body {
+    font-size: 1.2em;
+}
+
+.goals-container tr:nth-child(2n):hover {
+    background-color: #FFFFFF;
+    color: rgba(0, 0, 0, 0.897);
+    text-shadow: none;
+    transition: background-color 2s ease-in-out 1ms, color 2s ease-in 1ms;
+    cursor: text;
+}
+
+.goals-container p {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.goals-container td {
+    padding: 0 6px;
+    vertical-align: top;
+    text-align: center;
+    line-height: 2px;
+}
+
+.goals-container tr:hover td {
+    line-height: unset;
+    transition: line-height 2s ease-in 1ms;
+}
+
+.goals-container__body img[alt] {
+    width: 6em;
+    height: 6em;
+    border-radius: 2em;
+}
+
+.goals-container__body .hidden {
+    visibility: hidden;
+}
+
+.info-links__container {
+    width: 100%;
+    font-size: 1.5em;
+}
+
+.info-links {
+    width: 100%;
+    height: 40vh;
+    margin-bottom: 0.5em;
+    box-shadow: 3px 1px 12px 1px rgba(0,0,0,0.69);
+}
+
+.info-links:hover {
+    transform: translate(-1em, -1em);
+    transition: transform ease-in 500ms;
+}

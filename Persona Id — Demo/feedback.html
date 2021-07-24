@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/feedback.css">
+    <title>Обратная связь</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="upper-content__wrapper">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <header class="site__head">
+                        <h1 class="site__title-head"> Сайт-визитка </h1>
+                        <small>Заготовка</small>
+                    </header>
+                </div>
+            </div>
+            <div class="row hidden-second-panel">
+                <div class="col-lg-12 col-md-12">
+                    <nav class="second-nav-panel">
+                        <ul class="nav-panel__links">
+                            <li class="links-item inline-links-item"> <a href="about-me.html" target="_blank"
+                                    class="arrowed-links">Кто
+                                    я?</a></li>
+                            <li class="links-item inline-links-item"> <a href="goals.html" target="_blank"
+                                    class="arrowed-links">Куда
+                                    иду?</a></li>
+                            <li class="links-item inline-links-item"> <a href="feedback.html" target="_blank"
+                                    class="arrowed-links">Как
+                                    найти?</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-3 hidden-primary-panel">
+                    <nav class="nav-panel">
+                        <ul class="nav-panel__links">
+                            <li class="links-item"> <a href="about-me.html" target="_blank" class="arrowed-links">Кто
+                                    я?</a></li>
+                            <li class="links-item"> <a href="goals.html" target="_blank" class="arrowed-links">Куда
+                                    иду?</a></li>
+                            <li class="links-item"> <a href="feedback.html" target="_blank" class="arrowed-links">Как
+                                    найти?</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-9 col-md-9">
+                    <main class="content-sections">
+                        <header class="form-title__header">
+                            <h2 class="form-title">Заполните форму и я сама вас найду!</h2>
+                        </header>
+                        <form action="#" method="post" enctype="multipart/form-data">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6">
+                                    <fieldset>
+                                        <legend> Контактная информация </legend>
+                                        <label for="namefield"> <span>* Имя</span> </label>
+                                        <br>
+                                        <input type="text" name="name" id="namefield" placeholder="Василилий Иванов" required>
+                                        <br>
+                                        <label for="telfield"> <span>* Телефон</span> </label>
+                                        <br>
+                                        <input type="tel" name="telnumber" id="telfield" placeholder="+7 921 320-88-88"
+                                            pattern="\+d\s?\[0-9]{3}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" required>
+                                        <br>
+                                        <label for="emailfield"> <span>* E-mail</span></label>
+                                        <br>
+                                        <input type="email" name="email" id="emailfield" placeholder="ivanov@mail.ru" required>
+                                        <br>
+                                        <label for="cityfield"> <span>Город</span> </label>
+                                        <br>
+                                        <input type="search" name="city" id="cityfield" placeholder="Москва">
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <fieldset>
+                                        <legend>Пожелания</legend>
+                                        <label for="commentfield">
+                                            <span>Комментарий</span> </label>
+                                        <br>
+                                        <textarea class="liquid-rect" rows="5" cols="45" name="comment"
+                                            id="commentfield">Нужно что-то там (подставите сами). Прошу связаться для обсуждения.</textarea>
+                                        <br>
+                                        <label for="brief-field">Исходники </label> <input type="file" name="brief"
+                                            id="brief-field">
+                                        <br>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <fieldset>
+                                <legend>
+                                    Последний этап — отправка формы
+                                </legend>
+                                <div class="button delete-btn"><input type="reset" value="Возможно всё исправить ">
+                                </div>
+                                <div class="button submit-btn"><input type="submit" value="Послать и забыть навремя">
+                                </div>
+                            </fieldset>
+                        </form>
+                    </main>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <footer class="sign-container">
+                    <p class="sign">© Моя подпись.</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
