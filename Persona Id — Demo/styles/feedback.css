@@ -10,8 +10,12 @@
 классы модификаторы из bootstrap
 */
 
-input, textarea {
+input,
+textarea {
     width: 30vw;
+    /* width: 400px; 
+    это можно запихать в медиа-запрос
+    */
     padding: 0;
     padding-left: 6px;
     margin: 0;
@@ -43,7 +47,8 @@ textarea {
     border-radius: 6px;
 }
 
-input, fieldset legend :not(textarea) {
+input,
+fieldset legend :not(textarea) {
     height: 2.5em;
 }
 
@@ -59,12 +64,12 @@ input[type=file] {
 }
 
 .delete-btn {
-    margin-left: 2em;
+    margin-left: 1em;
 }
 
-.submit-btn {
-   margin-right: 2em; 
-}
+/* .submit-btn {
+    margin-right: 2em;
+} */
 
 .liquid-rect {
     resize: none;
