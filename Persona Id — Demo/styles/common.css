@@ -1,3 +1,6 @@
+/* Есть ошибка с border: thick!
+I must find it!*/
+
 html,
 body {
     width: 100%;
@@ -35,12 +38,9 @@ body {
     margin-bottom: 0;
 }
 
-/*break-point для навигационной панели: 991px и карточка уходит влево
-Поэтому нужно добавить скрытый ряд и прятать первую навигационную панель
-*/
-
 .nav-panel {
     position: fixed;
+    left: -80px;
     width: 20%;
     background: rgb(247, 245, 239);
     border-radius: 10em;
@@ -48,10 +48,11 @@ body {
 
 .nav-panel__links {
     margin-top: 10px;
-    margin-left: 3em;
+    font-size: 16px;
+    margin-left: 7em;
     list-style-type: "➤ ";
     color: black;
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
 .links-item {

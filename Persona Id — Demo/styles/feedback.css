@@ -1,25 +1,18 @@
-/*Подумать над расчётом ширины полей ввода и 
-кнопок на медиа-запросах. 
-Разрыв — 991px
+.form-title {
+    margin-bottom: 1.3em;
+}
 
-ИЛИ
-
-С 992 px — едет выравнивание блоков.
-Необходимо поменять размеры
-блоков fieldset или поставить
-классы модификаторы из bootstrap
-*/
+fieldset {
+    margin-bottom: 2em;
+}
 
 input,
 textarea {
     width: 35vw;
-    /* width: 400px; 
-    это можно запихать в медиа-запрос
-    */
     padding: 0;
-    padding-left: 6px;
+    padding-left: 10px;
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 1.5em;
     box-sizing: border-box;
     font-family: inherit;
     font-size: 100%;
@@ -36,8 +29,13 @@ input:focus {
     outline: none;
 }
 
-.form-title {
-    margin-bottom: 1.3em;
+.required-asterisk::before {
+    content: "* ";
+    font-size: 2em;
+}
+
+label {
+    font-size: 16px;
 }
 
 legend {
@@ -60,10 +58,16 @@ textarea:focus {
     outline: none;
 }
 
+.liquid-rect {
+    resize: none;
+}
+
 input,
 fieldset legend :not(textarea) {
-    height: 2.5em;
+    height: 2.8em;
 }
+
+/* Самый вредный для стилизации элемент */
 
 input[type=file] {
     border: none;
@@ -72,9 +76,12 @@ input[type=file] {
     cursor: pointer;
 }
 
+
 input[type=file]:focus {
     outline: none;
 }
+
+/* Кнопки */
 
 .container-buttons {
     text-align: center;
@@ -88,19 +95,27 @@ input[type=file]:focus {
     border-radius: 50%;
     vertical-align: middle;
     font-weight: 600;
+    font-size: 16px;
+    transition: all 1s;
 }
 
 .delete-btn {
-    margin-right: 1.5em;
+    margin-right: 2em;
     margin-bottom: 1.43em;
+    background: #F7F5EF;
+    color: #E89B20;
 }
 
 .submit-btn {
     margin-bottom: 1.43em;
+    background: #E89B20;
+    color: #F7F5EF;
 }
 
-.liquid-rect {
-    resize: none;
+.delete-btn:hover,
+.submit-btn:hover {
+    background-color: black;
+    color: #f7f5efd3;
 }
 
 @media (max-width: 992px) {
