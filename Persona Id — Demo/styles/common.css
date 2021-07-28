@@ -1,5 +1,7 @@
-/* Есть ошибка с border: thick!
-I must find it!*/
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap');
+/*Заголовки — font-family: 'Arimo', sans-serif;*/
+/*Основной текст — font-family: 'PT Serif', serif;*/
 
 html,
 body {
@@ -10,6 +12,7 @@ body {
     background-color: #0C0C0C;
     background-image: url(../img/background.jpg);
     background-size: cover;
+    font-family: 'PT Serif', serif;
 }
 
 ::selection {
@@ -36,6 +39,8 @@ body {
 
 .site__head .site__title-head {
     margin-bottom: 0;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 600;
 }
 
 .nav-panel {
@@ -53,6 +58,8 @@ body {
     list-style-type: "➤ ";
     color: black;
     padding-left: 10px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .links-item {
@@ -74,8 +81,7 @@ body {
     color: black;
     text-shadow: none;
     font-size: 1.2em;
-    font-weight: bold;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
 }
 
 .arrowed-links::after {
@@ -166,6 +172,12 @@ body {
 .sign {
     padding-bottom: 10px;
 }
+
+/* 
+Эксперимент со скоростью загрузки!
+@import url('about-me.css');
+@import url('goals.css');
+@import url('feedback.css'); */
 
 /* 
 Анимация границ: https://css-tricks.com/animating-border/

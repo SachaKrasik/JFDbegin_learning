@@ -1,11 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap');
+/*Заголовки — font-family: 'Arimo', sans-serif;*/
+/*Основной текст — font-family: 'PT Serif', serif;*/
+
 .info-container__body-title,
 .info-container__footer {
     text-align: center;
+
+}
+
+.info-container__body-title {
+    font-family: 'Arimo', sans-serif;
+    font-weight: 600;
 }
 
 .info-container__head>.info-container__head-title {
     margin-top: 0;
     text-align: right;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 600;
 }
 
 
