@@ -40,7 +40,8 @@ body {
 .site__head .site__title-head {
     margin-bottom: 0;
     font-family: 'Arimo', sans-serif;
-    font-weight: 600;
+    font-weight: 700;
+    letter-spacing: 0.6px;
 }
 
 .nav-panel {
@@ -49,6 +50,7 @@ body {
     width: 26%;
     background: rgb(247, 245, 239);
     border-radius: 10em;
+    z-index: 1;
 }
 
 .nav-panel__links {
@@ -81,7 +83,7 @@ body {
     color: black;
     text-shadow: none;
     font-size: 1.2em;
-    
+
 }
 
 .arrowed-links::after {
@@ -114,9 +116,21 @@ body {
 }
 
 @media (max-width: 992px) {
+    .site__head {
+        margin-top: 68px;
+    }
+
     .hidden-primary-panel {
         visibility: hidden;
         width: 10em;
+    }
+
+    .nav-panel__links {
+        margin: 0;
+    }
+
+    .arrowed-links {
+        width: 4.75em;
     }
 
     .hidden-second-panel {
@@ -127,7 +141,13 @@ body {
     .second-nav-panel {
         width: fit-content;
         margin: 0 auto;
+    }
+
+    .fixed-second-panel {
+        width: 100%;
+        position: fixed;
         background-color: rgb(247, 245, 239);
+        z-index: 2;
     }
 
     .nav-panel__links {
@@ -140,24 +160,12 @@ body {
         text-align: center;
     }
 
-    .inline-links-item:nth-child(2n) {
+    .inline-links-item:first-child,
+    .inline-links-item:last-child {
         border-left: 0.1em black solid;
         border-right: 0.1em black solid;
     }
 
-}
-
-@media (max-width: 360px) {
-    .inline-links-item {
-        display: block;
-        width: max-content;
-    }
-
-    .inline-links-item:nth-child(2n) {
-        border: none;
-        border-top: 0.1em black solid;
-        border-bottom: 0.1em black solid;
-    }
 }
 
 /*Футер*/

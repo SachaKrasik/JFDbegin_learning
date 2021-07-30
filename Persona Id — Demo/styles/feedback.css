@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap');
 /*Заголовки — font-family: 'Arimo', sans-serif;*/
 /*Основной текст — font-family: 'PT Serif', serif;*/
 
 .form-title {
     margin-bottom: 1.3em;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 600;
 }
 
 fieldset {
@@ -44,10 +44,13 @@ label {
 }
 
 legend {
-    color: #E8C734;
-    text-align: center;
     border-bottom: 1px solid #F7F5EF;
     margin-bottom: 1.5em;
+    padding-bottom: 6px;
+    color: #E8C734;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 0.6px;
 }
 
 textarea {
@@ -56,6 +59,7 @@ textarea {
     border-radius: 6px;
     border: 6px solid #E8C734;
     transition: border 2s;
+    margin-bottom: 3em;
 }
 
 textarea:focus {
